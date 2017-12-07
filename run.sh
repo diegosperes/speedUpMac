@@ -1,5 +1,6 @@
 # Remove some caches
 
+echo "Remove some caches \n$(du -hcs ~/Library/Caches/*)"
 sudo rm -rf ~/Library/Caches/*
 
 # By default mac will enable the swap memory and does not compress any data to optimize the use of memory ram
