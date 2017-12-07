@@ -1,6 +1,6 @@
 # Remove some caches
 
-rm -rf ~/Library/Caches/*
+sudo rm -rf ~/Library/Caches/*
 
 # By default mac will enable the swap memory and does not compress any data to optimize the use of memory ram
 # So we will disable the swap memory to only use the memory ram and enabled the data compress
@@ -9,3 +9,8 @@ rm -rf ~/Library/Caches/*
 
 echo "Current nvram mode: $(sysctl -a vm.compressor_mode)"
 sudo nvram boot-args="vm_compressor=2"
+
+# Remove swapfile
+
+echo "Removing swap files \n$(du -hcs /private/var/vm/swapfile*)"
+sudo rm -rf /private/var/vm/swapfile*
