@@ -15,3 +15,6 @@ sudo nvram boot-args="vm_compressor=2"
 # Remove swapfile
 #echo "Removing swap files \n$(du -hcs /private/var/vm/swapfile*)"
 #sudo rm -rf /private/var/vm/swapfile*
+
+# Purge content of memory ram and disk cache contents
+sudo purge
