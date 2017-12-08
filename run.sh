@@ -11,7 +11,7 @@ sudo rm -rf ~/Library/Caches/*
 echo "Current nvram mode: $(sysctl -a vm.compressor_mode)"
 sudo nvram boot-args="vm_compressor=2"
 
+# TO-DO: We are unabled to remove this files.
 # Remove swapfile
-
-echo "Removing swap files \n$(du -hcs /private/var/vm/swapfile*)"
-sudo rm -rf /private/var/vm/swapfile*
+#echo "Removing swap files \n$(du -hcs /private/var/vm/swapfile*)"
+#sudo rm -rf /private/var/vm/swapfile*
